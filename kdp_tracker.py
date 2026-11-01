@@ -216,6 +216,17 @@ def _currency(value: float) -> str:
     return f"${value:,.2f}"
 
 
+def _series_label(series: str | None, series_number: float | None) -> str:
+    series_part = series or "-"
+    if series_number is None:
+        number_part = "-"
+    elif float(series_number).is_integer():
+        number_part = str(int(series_number))
+    else:
+        number_part = str(series_number)
+    return f"{series_part} #{number_part}"
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="kdp_tracker.py",

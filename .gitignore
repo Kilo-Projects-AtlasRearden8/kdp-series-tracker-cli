@@ -1,7 +1,11 @@
-__pycache__/
+*.csv
 *.pyc
 *.pyo
-.kdp_library.json
-kdp_library.json
-*.csv
 .env
+.env.*
+.kdp_library.json
+.venv/
+__pycache__/
+dist/*.tmp
+kdp_library.json
+node_modules/
