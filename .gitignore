@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.kdp_library.json
+kdp_library.json
+*.csv
+.env
